@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;businessman-using-mobile-online-banking-260nw-1326553091.jpg&apos; to &apos;webapp&apos;" description="Move &apos;businessman-using-mobile-online-banking-260nw-1326553091.jpg&apos; to &apos;webapp&apos;" destination="src/main/webapp" element1="businessman-using-mobile-online-banking-260nw-1326553091.jpg" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1631280254585" updateReferences="true"/>
+</session>

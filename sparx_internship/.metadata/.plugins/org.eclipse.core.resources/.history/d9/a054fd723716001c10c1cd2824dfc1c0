@@ -1,0 +1,65 @@
+package Servlets;
+
+import java.io.IOException;
+
+import java.io.PrintWriter;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.lang.Exception;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+
+/**
+ * Servlet implementation class Customer
+ */
+public class Customer extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		try {
+		// TODO Auto-generated method stub
+		
+			 Class.forName("com.mysql.jdbc.Driver");
+			    String mysqlConnUrl = "jdbc:mysql://localhost:3306/sparx";
+		  	String mysqlUserName = "root";
+				String mysqlPassword = "Ram@9059";
+				java.sql.Connection con = DriverManager.getConnection(mysqlConnUrl, mysqlUserName , mysqlPassword);
+				Statement selectStmt = con.createStatement();
+				  ResultSet rs = selectStmt.executeQuery("SELECT * FROM customers");
+	out.println("<html>");
+	out.println("<body>");
+	
+	out.println("<table>");
+	
+		  while(rs.next()) {
+			  int id=rs.getInt(1);
+			  String name=rs.getString(2);
+			  String email=rs.getString(3);
+			  long balance=rs.getLong(4);
+			  out.println("<tr><td>"+id+"</td><td> "+name+"</td><td> "+email+" </td><td>"+balance+"</td></tr>");
+		  }
+		 
+		
+		
+		}
+		catch(Exception e){
+			out.println("Failed"+e);
+		}
+		out.println("</table>");
+		out.println("<\body>");
+		out.println("</html>");
+		out.close();
+		
+	}
+
+}

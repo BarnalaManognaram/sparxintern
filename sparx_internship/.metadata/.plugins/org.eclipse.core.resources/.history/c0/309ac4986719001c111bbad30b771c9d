@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>transfer</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body> 
+<a href="home.html"><button class="button1">Home</button></a>
+<a href="Customer.java"><button class="button1">view all customers</button></a><br><br>
+  <center>
+  <div class="back">
+   <h2>Transfer Money</h2><br>
+    <b>Sender Id:</b><br><input  type="text" name="sid" /><br><br>
+    <b>Amount:</b><br><input  type="text" name="tm"/><br><br>
+    <b>Reciever Id:</b><br><input type="text" name="rid"/><br><br>
+    <input type="button" value="submit"/><br><br>
+    </div>
+  </center>
+</body>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:skyblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: skyblue;
+}
+
+div {
+  border-radius: 5px;
+  background-color: skyblue;
+  padding: 20px;
+}
+</style>
+</html>

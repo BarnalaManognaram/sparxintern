@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\sparx internship\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4029894008.index
+352391361.index
+1902157699.index
+3051152554.index
+759314019.index
+355066155.index
+819544101.index

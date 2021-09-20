@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>transfer</title>
+</head>
+<body>
+  <center>
+   <h2>Transfer Money</h2>
+    <b>Id:</b><input type="text" name="id" />
+    
+  </center>
+</body>
+</html>

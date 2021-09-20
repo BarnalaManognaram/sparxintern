@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+.button{
+	background-color:green;
+	color: white;
+	border-radius: 8px;
+		margin-left:690px;
+}
+.button1{
+	background-color:green;
+	color: white;
+	border-radius: 4px;
+	float: right;
+	margin-right:16px;
+}
+.heading{
+	color:green;
+}
+.bottom{
+	background-color:skyblue;
+	border-radius: 8px;
+
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.tr:nth-child(even) {
+  background-color: #dddddd;
+}

@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+.button{
+	background-color:green;
+	color: white;
+	border-radius: 8px;
+		margin-left:690px;
+}
+.button1{
+	background-color:green;
+	color: white;
+	border-radius: 4px;
+	float: right;
+	margin-right:16px;
+}
+.heading{
+	color:green;
+}
+.bottom{
+	background-color:skyblue;
+	border-radius: 8px;
+
+}
+*{
+	background-color:black;
+	color:white;
+}
